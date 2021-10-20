@@ -1,0 +1,14 @@
+<p>Hello !</p>
+<!-- ngClass -->
+<input type="text" [(ngModel)] = "color">
+<div class="square"
+[ngClass] ="{
+    blueSquare: color === 'blue',
+    redSquare: color === 'red'
+}"
+>
+</div>
+<!-- ngFor -->
+<div *ngFor = "let user of users; let i =index">
+  {{i+1}}-{{user.nom}}
+</div>
